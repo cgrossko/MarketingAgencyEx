@@ -1,0 +1,308 @@
+/* --------------------------
+  Base Styles
+--------------------------- */
+
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  color: white;
+  font-size: 16px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5; 
+  margin: 0;
+
+  }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400; 
+  pointer-events: stroke;
+}
+
+a:hover {
+  opacity: .2;
+  transition: opacity .3s;
+}
+
+.top-content {
+  background: url("../img/BeachBanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40%;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav ul li {
+  margin: 10px;
+}
+
+.logo-nav {
+  position: absolute;
+  margin-left: 10px;
+}
+
+.top-heading {
+  text-align: center;
+}
+
+.top-heading h1 {
+  font-size: 4rem;
+  line-height: 60px;
+  }
+
+.top-heading a {
+  background-color: #b30000;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 0;
+}
+
+.top-heading a span {
+  padding-top: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  background-color: #990000;
+  margin-left: 5px;
+}
+
+.scroll-down, .we-proudly-do {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.we-proudly-do h3, .case-studies-content h3, .clients h3, .clients-icons ul li a, 
+.started-content h3, .started-content p, .started-content a {
+  color: #990000;
+}
+
+.proudly-icons ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.proudly-icons ul li a {
+  display: flex;
+  flex-direction: column;
+  color: red;
+  margin: 10px;
+  flex-wrap: wrap;
+  color: #990000;
+  width: 100px;
+}
+
+.case-studies-content {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.case-studies-img ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.case-studies-img ul li  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case-studies-img ul li a {
+  padding: 10rem;
+}
+
+.case-studies-img ul li a:hover {
+  opacity: .6;
+}
+
+#versace {
+  background: url(../img/Versace.jpg);
+  width: 250px;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -170px;
+  opacity: 0.4;
+}
+
+#dior {
+  background: url(../img/Dior.jpg);
+  width: 250px;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -190px;
+  opacity: 0.4;
+}
+
+#bmw {
+  background: url(../img/Bmw.jpg);
+  width: 250px;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+#nikon {
+  background: url(../img/Nikon.jpg);
+  width: 250px;
+  height: 350px;
+  background-size: cover;
+  background-position-x: -140px;
+  opacity: 0.4;
+}
+
+#starbucks {
+  background: url(../img/Starbucks.jpg);
+  width: 250px;
+  height: 350px;
+  background-size: cover;
+  background-position-x: -215px;
+  opacity: 0.4;
+}
+
+#yamaha {
+  background: url(../img/Yamaha.jpg);
+  width: 250px;
+  height: 350px;
+  background-size: cover;
+  background-position-x: -115px;
+  opacity: 0.4;
+}
+
+.clients {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.clients-icons ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.row1, .row2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.clients-icons ul li {
+  margin: 30px;
+}
+
+.clients-icons ul li a {
+  color: #4d4d4d;
+}
+
+.started-content {
+  background-color: #f2f2f2;
+  text-align: center;
+  margin-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.started-content h3 {
+  padding-top: 3rem;
+}
+
+.started-buttons a {
+  background-color: #b30000;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 0;
+  color: white;
+  margin: 10px;
+  font-size: small;
+}
+
+.started-content p {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.started-buttons a i {
+  padding-top: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  background-color: #990000;
+  margin-left: 5px;
+  color: white;
+  font-size: small;
+}
+
+.footer {
+  background-color: #404040;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-links ul li, .footer-icons ul li {
+  margin: 10px;
+}
+
+
+
+
+@media (min-width: 769px) {
+  .clients-icons ul {
+  position: relative;
+    height: 220px;
+ }
+ .row1 {
+  display: flex;
+  flex-direction: row;
+ }
+ .row2 {
+  bottom: 0;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+ }
+ .footer-links ul, .footer-icons ul {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px #ccc;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
